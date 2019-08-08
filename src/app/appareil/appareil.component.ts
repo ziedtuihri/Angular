@@ -8,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class AppareilComponent implements OnInit {
 
 title='hello i m zied tuihri';
-  constructor() { }
+appareilName: string = 'Machine à laver';
+appareilStatus: string = 'éteint';
+isAuth = false;
+  constructor() {
+    setTimeout(
+      () => {
+        this.isAuth = true;
+      }, 4000
+    );
+  }
 
   ngOnInit() {
   }
+status(){
+  return this.appareilStatus;
+}
+
 
 }

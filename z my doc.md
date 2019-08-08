@@ -21,7 +21,16 @@ In the app.module.ts remove the import statement for this component and remove i
 Remove the line with the export statement for this component from index.ts.
 
 
-
-to change in the folder of your project angular
-
 sudo chmod -R ugo+rw yourFileName
+
+RQ :
+
+40 secon and will change to true 
+
+  constructor() {
+    setTimeout(
+      () => {
+        this.isAuth = true;
+      }, 4000
+    );
+  }
