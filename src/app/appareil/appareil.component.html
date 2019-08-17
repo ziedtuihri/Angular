@@ -10,4 +10,4 @@
 <br>
 <button class="btn btn-success" disabled>Tout allumer</button>
 
-<button class="btn btn-success" [name]="title" [disabled]="!isAuth">Tout allume</button>
+<button class="btn btn-success" (click)="onAllumer()" [name]="title" [disabled]="!isAuth">Tout allume</button>

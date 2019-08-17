@@ -24,6 +24,8 @@ isAuth = false;
 status(){
   return this.appareilStatus;
 }
+onAllumer(){
+  console.log('allumer tout ');
 
-
+}
 }
