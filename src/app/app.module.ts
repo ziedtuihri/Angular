@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppareilComponent } from './appareil/appareil.component';
+import { Component1Component } from './component1/component1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppareilComponent
+    AppareilComponent,
+    Component1Component
   ],
   imports: [
     BrowserModule,
@@ -17,4 +19,5 @@ import { AppareilComponent } from './appareil/appareil.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
