@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
   selector: 'app-sample',
 template: `<br><br>
 <input type="text" name="heroName" />
-<app-required name="*******"></app-required><br><br>
+<app-required name="*******" class="!!!!!!"></app-required><br><br>
 `
 })
 export class SampleComponent {
