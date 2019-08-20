@@ -1,14 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-sample',
-template: `
+template: `<br><br>
 <input type="text" name="heroName" />
-<app-required name="Hero Name"></app-required>
+<app-required name="*******"></app-required><br><br>
 `
 })
 export class SampleComponent {
 
-  @Input()
-  public name: String = '';
+
+
 
 }
