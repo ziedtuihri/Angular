@@ -7,6 +7,8 @@ import { AppareilComponent } from './appareil/appareil.component';
 import { Component1Component } from './component1/component1.component';
 import { RequiredComponent } from './required/required.component';
 import { SampleComponent } from './sample/sample.component';
+import { NameChildComponent } from './name-child/name-child.component';
+import { NameParentComponent } from './name-parent/name-parent.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SampleComponent } from './sample/sample.component';
     AppareilComponent,
     Component1Component,
     RequiredComponent,
-    SampleComponent
+    SampleComponent,
+    NameChildComponent,
+    NameParentComponent
   ],
   imports: [
     BrowserModule,

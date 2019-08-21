@@ -8,7 +8,4 @@ template: `<br><br>
 })
 export class SampleComponent {
 
-
-
-
 }

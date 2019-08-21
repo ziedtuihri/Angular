@@ -9,5 +9,5 @@ export class RequiredComponent  {
   @Input()
   public name: String = '';
   @Input()
-  public class:String ='';
+   class:String ='';
 }
