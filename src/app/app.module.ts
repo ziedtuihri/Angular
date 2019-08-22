@@ -9,6 +9,8 @@ import { RequiredComponent } from './required/required.component';
 import { SampleComponent } from './sample/sample.component';
 import { NameChildComponent } from './name-child/name-child.component';
 import { NameParentComponent } from './name-parent/name-parent.component';
+import { CTest1Component } from './c-test1/c-test1.component';
+import { CTest2Component } from './c-test2/c-test2.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NameParentComponent } from './name-parent/name-parent.component';
     RequiredComponent,
     SampleComponent,
     NameChildComponent,
-    NameParentComponent
+    NameParentComponent,
+    CTest1Component,
+    CTest2Component
   ],
   imports: [
     BrowserModule,
