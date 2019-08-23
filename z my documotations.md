@@ -3,12 +3,12 @@
 ├── src
 │   ├── index.html
 │   ├── main.ts 3
-│   ├── polyfills.ts 4 
+│   ├── polyfills.ts 4
 │   ├── styles.css  
 │   ├── tsconfig.app.json 5
 │   └── tslint.json 6
-├── tsconfig.json 
-└── tslint.json 
+├── tsconfig.json
+└── tslint.json
 
 1 This is the main configuration file for Angular, you need this to run the Angular CLI.
 2 package.json is a configuration file that npm uses to install the required dependant libraries (These are libraries that you need in order to build your project, the 3code you need to deploy for your web app will be much smaller)
@@ -25,7 +25,7 @@ A configuration file to tell TypeScript how to compile into JavaScript.
 
 ng new mon-projet-angular --style=scss --skip-tests=true
 
-npm install bootstrap@3.3.7 --save 
+npm install bootstrap@3.3.7 --save
 
 
 
@@ -38,7 +38,7 @@ architect/build/options :
 
 Créez un component
 
-ng generate component mon-premier 
+ng generate component mon-premier
 
 
 Delete the folder containing this component.
@@ -50,7 +50,7 @@ sudo chmod -R ugo+rw yourFileName
 
 RQ :
 
-40 secon and will change to true 
+40 secon and will change to true
 
   constructor() {
     setTimeout(
@@ -66,5 +66,15 @@ Change npm default caret(^) in package.json
 npm config set save-prefix='~'
 npm config set save-prefix='' will remove the auto-prefixing
 
-or 
-npm config set save-exact true	
+or
+npm config set save-exact true
+
+RQ :
+
+The child component exposes an EventEmitter property with which it emits events when something happens. The
+parent binds to that event property and reacts to those events.
+The child's EventEmitter property is an output property, typically adorned with an @Output decoration as seen in
+this VoterComponent:
+
+The parent VoteTakerComponent binds an event handler (onVoted) that responds to the child event payload
+($event) and updates a counter.
