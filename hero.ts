@@ -3,15 +3,16 @@ name : string;
 
 }
 
-export const HEROES=[
-'Mr ROBOT',
-'Mr eliot',
-'   ',
-'Mrs chaimut'
+export const HEROES = [
+  {name: 'Dr IQ'},
+  {name: 'Magneta'},
+  {name: '     '},
+  {name: 'Bombasto'}
 ];
-
+/*
 export const HER = [
   {name: 'Dr IQ'},
   {name: 'Magneta'},
   {name: 'Bombasto'}
 ];
+*/

@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HEROES } from '../../../hero';
 @Component({
   selector: 'app-c-test2',
-  templateUrl: './c-test2.component.html',
-  styleUrls: ['./c-test2.component.scss']
+  template: `
+<app-c-test1 *ngFor="let hero of heroes"
+ [hero]=hero
+  [master]=master>
+   </app-c-test1>
+  `
 })
-export class CTest2Component implements OnInit {
+export class CTest2Component {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+heroes = HEROES;
+master= 'Master';
 }
