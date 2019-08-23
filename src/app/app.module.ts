@@ -11,6 +11,8 @@ import { NameChildComponent } from './name-child/name-child.component';
 import { NameParentComponent } from './name-parent/name-parent.component';
 import { CTest1Component } from './c-test1/c-test1.component';
 import { CTest2Component } from './c-test2/c-test2.component';
+import { MyVoterComponent } from './my-voter/my-voter.component';
+import { VoteTakerComponent } from './vote-taker/vote-taker.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CTest2Component } from './c-test2/c-test2.component';
     NameChildComponent,
     NameParentComponent,
     CTest1Component,
-    CTest2Component
+    CTest2Component,
+    MyVoterComponent,
+    VoteTakerComponent
   ],
   imports: [
     BrowserModule,
