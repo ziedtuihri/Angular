@@ -11,12 +11,9 @@ import { NameChildComponent } from './name-child/name-child.component';
 import { NameParentComponent } from './name-parent/name-parent.component';
 import { MyVoterComponent } from './my-voter/my-voter.component';
 import { VoteTakerComponent } from './vote-taker/vote-taker.component';
+import { DatalistComponent } from './datalist/datalist.component';
+import { PagerComponent } from './pager/pager.component';
 
-const appRoutes: Routes = [
-  { path: 'appareils', component: AppareilViewComponent },
-  { path: 'auth', component: AuthComponent },
-  { path: '', component: AppareilViewComponent }
-];
 
 @NgModule({
   declarations: [
@@ -29,10 +26,12 @@ const appRoutes: Routes = [
     NameParentComponent,
     MyVoterComponent,
     VoteTakerComponent,
+    DatalistComponent,
+    PagerComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
