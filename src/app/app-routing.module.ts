@@ -4,7 +4,6 @@ import { AppareilComponent } from './appareil/appareil.component';
 
 
 const routes: Routes = [
-
   {
       path: 'app',
       component: AppareilComponent

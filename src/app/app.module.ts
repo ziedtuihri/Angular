@@ -11,8 +11,8 @@ import { NameChildComponent } from './name-child/name-child.component';
 import { NameParentComponent } from './name-parent/name-parent.component';
 import { MyVoterComponent } from './my-voter/my-voter.component';
 import { VoteTakerComponent } from './vote-taker/vote-taker.component';
-import { DatalistComponent } from './datalist/datalist.component';
 import { PagerComponent } from './pager/pager.component';
+import { DataComponent } from './data/data.component';
 
 
 @NgModule({
@@ -26,8 +26,8 @@ import { PagerComponent } from './pager/pager.component';
     NameParentComponent,
     MyVoterComponent,
     VoteTakerComponent,
-    DatalistComponent,
     PagerComponent,
+    DataComponent,
   ],
   imports: [
     BrowserModule,
