@@ -13,6 +13,7 @@ import { MyVoterComponent } from './my-voter/my-voter.component';
 import { VoteTakerComponent } from './vote-taker/vote-taker.component';
 import { PagerComponent } from './pager/pager.component';
 import { DataComponent } from './data/data.component';
+import { MissionComponent } from './mission/mission.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { DataComponent } from './data/data.component';
     VoteTakerComponent,
     PagerComponent,
     DataComponent,
+    MissionComponent,
   ],
   imports: [
     BrowserModule,
