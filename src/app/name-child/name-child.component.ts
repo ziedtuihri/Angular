@@ -12,5 +12,5 @@ private _name2 : string ='';
 set name2(name :string){
   this._name2=(name && name.trim()) || '<no name set>';
 }
-get name2(): string {return this._name2+" : returned name";}
+get name2(): string {return this._name2+" : =>";}
 }

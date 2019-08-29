@@ -14,6 +14,7 @@ import { VoteTakerComponent } from './vote-taker/vote-taker.component';
 import { PagerComponent } from './pager/pager.component';
 import { DataComponent } from './data/data.component';
 import { MissionComponent } from './mission/mission.component';
+import { ChildmissionComponent } from './childmission/childmission.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { MissionComponent } from './mission/mission.component';
     PagerComponent,
     DataComponent,
     MissionComponent,
+    ChildmissionComponent,
   ],
   imports: [
     BrowserModule,
