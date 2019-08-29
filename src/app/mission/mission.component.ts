@@ -7,13 +7,12 @@ import { MissionService }    from '../mission.service';
   template : `
   <h2>Mission Control : </h2>
   <button class="btn btn-outline-warning" (click)="announce()" >Announce mission </button>
-  <app-name-child *ngFor="let astronauts of astronaut" [name2]="astronaut"></app-name-child>
+  <app-my-astronaut *ngFor="let astronauts of astronaut" [astronaut]="astronaut"></app-my-astronaut>
 
   <h3>History</h3>
   <ul>
   <li *ngFor="let event of history">{{ event }}</li>
   </ul>
-
 
   `,
   providers : [MissionService]
@@ -32,7 +31,7 @@ this.history.push(`${astronaut} confirmed the mission`);
    announce() {
 let mission = this.missions[this.nextMission++];
 this.missionService.announceMission(mission);
-this.history.push(`Mission "${mission}" announced`);
+this.history.push(`Mission "${mission}" announced `+this.nextMission);
 if (this.nextMission >= this.missions.length) { this.nextMission = 0; }
 }
 

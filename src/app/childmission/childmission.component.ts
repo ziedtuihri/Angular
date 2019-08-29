@@ -1,15 +1,15 @@
-import { Component, OnInit , Input } from '@angular/core';
+import { Component , Input } from '@angular/core';
 
 @Component({
   selector: 'app-childmission',
   template : `
-  <p>{{mission}}</p>
+  <p>mission :: {{m}}</p>
   `
 })
 export class ChildmissionComponent {
 
   constructor() { }
   @Input()
-  name : string ='';
+  m : string ='';
 
 }

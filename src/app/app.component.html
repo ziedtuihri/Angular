@@ -1,11 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center" class="col-md-5">
+<div class="row">
+<div style="text-align:center" class="col-5">
   <h1>
     Welcome to {{ title }}!
   </h1>
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<div class="col-md-7">
+<div class="col-7">
 <h2> Here are some links to help you start: this links is tutorial </h2>
 <ul>
   <li>
@@ -19,16 +20,25 @@
   </li>
 </ul>
 </div>
-<app-appareil></app-appareil>
-<div class="col-md-8">
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-appareil></app-appareil>
+  </div>
+</div>
+<div class="row">
+<div class="col-12">
 <app-sample></app-sample>
+</div></div>
 <hr><hr>
+<div class="row">
+<div class="col-5">
 <app-name-parent></app-name-parent><br>
 </div>
-<div clas="col-md-4">
-</div>
-
+<div clas="col-7">
 <app-vote-taker></app-vote-taker>
 <app-data></app-data>
 <app-mission></app-mission>
+</div>
+</div>
 <router-outlet></router-outlet>
