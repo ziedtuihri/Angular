@@ -16,6 +16,8 @@ import { DataComponent } from './data/data.component';
 import { MissionComponent } from './mission/mission.component';
 import { ChildmissionComponent } from './childmission/childmission.component';
 import { MyAstronautComponent } from './my-astronaut/my-astronaut.component';
+import { JokeComponent } from './joke/joke.component';
+import { Joke2Component } from './joke2/joke2.component';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { MyAstronautComponent } from './my-astronaut/my-astronaut.component';
     MissionComponent,
     ChildmissionComponent,
     MyAstronautComponent,
+    JokeComponent,
+    Joke2Component,
   ],
   imports: [
     BrowserModule,
