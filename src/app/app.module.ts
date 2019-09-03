@@ -18,6 +18,8 @@ import { ChildmissionComponent } from './childmission/childmission.component';
 import { MyAstronautComponent } from './my-astronaut/my-astronaut.component';
 import { JokeComponent } from './joke/joke.component';
 import { Joke2Component } from './joke2/joke2.component';
+import { Joke3Component } from './joke3/joke3.component';
+import { Joke4Component } from './joke4/joke4.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { Joke2Component } from './joke2/joke2.component';
     MyAstronautComponent,
     JokeComponent,
     Joke2Component,
+    Joke3Component,
+    Joke4Component,
   ],
   imports: [
     BrowserModule,
