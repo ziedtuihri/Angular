@@ -20,6 +20,7 @@ import { JokeComponent } from './joke/joke.component';
 import { Joke2Component } from './joke2/joke2.component';
 import { Joke3Component } from './joke3/joke3.component';
 import { Joke4Component } from './joke4/joke4.component';
+import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { Joke4Component } from './joke4/joke4.component';
     Joke2Component,
     Joke3Component,
     Joke4Component,
+    AutoCompleteComponent,
   ],
   imports: [
     BrowserModule,
