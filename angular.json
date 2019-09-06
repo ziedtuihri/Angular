@@ -48,7 +48,9 @@
             ],
             "styles": [
              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "./src/styles.scss"
+              "./src/styles.scss",
+              "./node_modules/select2/dist/css/select2.min.css",
+              "./node_modules/select2/dist/js/select2.min.js"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",

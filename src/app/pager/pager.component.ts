@@ -11,50 +11,26 @@ import { Select2OptionData } from 'ng2-select2';
   <div><select (change)="Selected2($event)"><option *ngFor="let l of Lists" [value]="l.name">{{l.name}}</option></select></div>
   <input type="button" value="submit"/>
   <h4 [hidden]="hide2">the name selected : {{ selected2 }} </h4>
-
-  <select select2 style="width:100%;" class="select2" id="symbolId" [(ngModel)]="selectedContractDetails.name">
-        <option *ngFor="let symbol of exampleData" value="{{symbol}}">{{symbol}}</option>
-    </select>
+  <br><br>
+  <select class="select22" name="state" style="width: 250px;">
+  <option>select</option>
+  <option>Wyoming</option>
+  <option>Zaraga</option>
+  <option>Korasan</option>
+  </select>
   `
 })
 
 //Pager Component
-export class PagerComponent implements OnInit
+export class PagerComponent 
 {
-  public exampleData: Array<Select2OptionData>;
   selected: string = '';
   hide: boolean = true;
   selected2: string = '';
   hide2: boolean = true;
   Lists: List[];
 
-  ngAfterViewInit(){
-     $('.select2').on('select2:select', (event) => {
-         // Code you want to execute when you hit enter in select2 input box
-     });
-  }
 
-  ngOnInit() {
-      this.exampleData = [
-        {
-          id: 'basic1',
-          text: 'Basic 1'
-        },
-        {
-          id: 'basic2',
-          disabled: true,
-          text: 'Basic 2'
-        },
-        {
-          id: 'basic3',
-          text: 'Basic 3'
-        },
-        {
-          id: 'basic4',
-          text: 'Basic 4'
-        }
-      ];
-    }
 
   //method for event when selected the name
   Selected(event: any)
