@@ -54,6 +54,9 @@ export class AutoCompleteComponent {
 
     selectCountryName(name : any) {
         console.log(name.target.value);
-
+        if (name.key === '@') {
+          console.log("bombombom");
+      // Do something on press of @
+        }
     }
 }

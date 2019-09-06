@@ -21,7 +21,7 @@ import { Joke2Component } from './joke2/joke2.component';
 import { Joke3Component } from './joke3/joke3.component';
 import { Joke4Component } from './joke4/joke4.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
-
+import { Select2Module } from 'ng2-select2';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
     Joke3Component,
     Joke4Component,
     AutoCompleteComponent,
+
   ],
   imports: [
     BrowserModule,
