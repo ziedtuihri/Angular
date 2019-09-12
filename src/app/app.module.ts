@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,10 @@ import { Joke3Component } from './joke3/joke3.component';
 import { Joke4Component } from './joke4/joke4.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { Select2Module } from 'ng2-select2';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { Joke5Component } from './joke5/joke5.component';
+import { Joke6Component } from './joke6/joke6.component';
+import { Joke7Component } from './joke7/joke7.component';
 
 @NgModule({
   declarations: [
@@ -44,10 +49,15 @@ import { Select2Module } from 'ng2-select2';
     Joke3Component,
     Joke4Component,
     AutoCompleteComponent,
+    ProductDetailsComponent,
+    Joke5Component,
+    Joke6Component,
+    Joke7Component,
 
   ],
   imports: [
     BrowserModule,
+     HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

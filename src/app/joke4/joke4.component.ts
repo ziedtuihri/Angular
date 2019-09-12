@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-joke4',
@@ -21,9 +21,9 @@ export class Joke4Component
 
 class Joke
 {
-  setup : string;
-  punchline : string;
-  hide : boolean;
+ private  setup : string;
+ private punchline : string;
+ private hide : boolean;
 
   constructor(setup : string , punchline : string)
   {

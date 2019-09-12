@@ -22,7 +22,7 @@ import { Select2OptionData } from 'ng2-select2';
 })
 
 //Pager Component
-export class PagerComponent 
+export class PagerComponent implements OnInit
 {
   selected: string = '';
   hide: boolean = true;
@@ -30,7 +30,9 @@ export class PagerComponent
   hide2: boolean = true;
   Lists: List[];
 
-
+  ngOnInit(){
+    window.alert('The product has been shared!');
+  }
 
   //method for event when selected the name
   Selected(event: any)

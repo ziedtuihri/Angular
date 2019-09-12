@@ -21,6 +21,4 @@ export class Joke3Component  {
 @Input('joke') data : Joke;
 }
 
-class Joke{
-
-}
+class Joke{ }
